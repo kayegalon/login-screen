@@ -1,0 +1,154 @@
+:root {
+	--color-black: #000000;
+	--color-silver-sand: #c4c4c4;
+	--font-size-main: 20px;
+	--font-size-small: 16px;
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+	font-family: roboto-thin;
+	src: url(Roboto/Roboto-Medium.ttf);
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+	font-size: var(--font-size-main);
+	display: flex;
+	overflow: hidden;
+}
+
+#login, #image {
+	border: 1px;
+	width: 50%;
+	height:100vh;
+}
+
+.right-pane {
+	width: 100%;
+	height: 100%;
+}
+
+#login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+}
+
+.logo {
+	width: 50px;
+}
+
+.subheading {
+	font-size: var(--font-size-small);
+	font-family: roboto-thin;
+	margin-top: -.5rem;
+}
+
+input {
+	border: 1px solid var(--color-silver-sand);
+	border-radius: 5px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 10rem;
+	margin-bottom: 1rem;
+}
+
+::placeholder {
+	color: var(--color-silver-sand);
+}
+
+.login-btn {
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: var(--color-black);
+	padding: 1rem 9rem;
+	color: white;
+	font-family: roboto-thin;
+	font-size: var(--font-size-main);
+}
+
+.hr-or {
+	display: flex;
+	justify-content: space-between;
+	color: var(--color-silver-sand);
+	font-size: var(--font-size-small);
+}
+
+hr {
+	border-top: 1px solid;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	width: 9rem;
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.login-socials {
+	border: 1px solid var(--color-silver-sand);
+	border-radius: 5px;
+	padding: .5rem 6rem;
+	font-size: var(--font-size-small);
+	margin-bottom: 1rem;
+}
+
+.login-socials:nth-of-type(3) {
+	padding: .5rem 5.4rem;
+}
+
+.logo-google, .logo-facebook, .logo-twitter {
+	width: 22px;
+}
+
+.sign-up {
+	margin-top: 0;
+	font-family: roboto-thin;
+	font-size: var(--font-size-small);
+}
+
+a {
+	color: var(--color-black);
+}
+
+.login-btn:active, .login-socials:active {
+	border: 1px solid var(--color-black);
+	background-color: white;
+	color: var(--color-black);
+}
+
+input:focus {
+	border: 1px solid var(--color-silver-sand);
+	color: var(--silver-sand);
+}
+
+@media (max-width: 800px) {
+	.right-pane {
+		display: none;
+	}
+	
+	#login {
+		width: 100%;
+		height: 100vh;
+		padding-top: 1rem;
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
+}
+
+
