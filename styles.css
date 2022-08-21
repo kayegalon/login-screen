@@ -9,12 +9,12 @@
 
 @font-face {
 	font-family: roboto;
-	src: url(Roboto/Roboto-Black.ttf);
+	src: url(Roboto-Black.ttf);
 }
 
 @font-face {
 	font-family: roboto-thin;
-	src: url(Roboto/Roboto-Medium.ttf);
+	src: url(Roboto-Medium.ttf);
 }
 
 *, *::before, *::after {
